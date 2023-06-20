@@ -1,0 +1,49 @@
+### ADDED
+- MRS-2555 [PaymentQ] [FE] [UI] Waiting for Payment - Enhance Journey Payment Credit Card
+- MRS-2544 [PaymentQ] [Data Layer] Form Charge - Purchase OVO : Tracking Checkout Step 3
+- MRS-2530 [PaymentQ] [FE] [UI] Form Charge - Enhance User Interface Modal Confirm Cancel Payment
+- MRS-2454 [PaymentQ] [fe] [ui] Checkout Payment - Enhance User Interface Modal Confirm Cancel Payment
+- MRS-2307 [PaymentQ] [FE] [Form Charge] [TI] Credit Card - Possibility Crash in Form Charge
+- MRS-2308 [PaymentQ] [FE] [Waiting for Payment] [TI] Complete Journey in Waiting for Payment Page
+- MRS-2306 [PaymentQ] [FE] [Payment Method List] [TI] Admin Fee - Select an Eligible Payment Method
+- MRS-652 [PaymentQ CF] [No QA] [FE] [Desktop Web] Checkout Payment : Payment Method
+- MRS-656 [PaymentQ CF] [No QA] [FE] [Mobile Web] Checkout Payment : Payment Method
+- MRS-658 [PaymentQ CF] [No QA] [FE] [Desktop Web] Disable and show disable reason
+- MRS-657 [PaymentQ CF] [No QA] [FE] [Mobile Web] Disable and show disable reason
+- MRS-650 [PaymentQ CF] [No QA] [FE] [Desktop Web] Checkout Payment : Cashless Payment
+- MRS-654 [PaymentQ CF] [No QA] [FE] [Mobile Web] Checkout Payment : Cashless Payment
+- MRS-651 [PaymentQ CF] [No QA] [FE] [Desktop Web] Checkout Payment : Order Detail
+- MRS-655 [PaymentQ CF] [No QA] [FE] [Mobile Web] Checkout Payment : Order Detail
+- MRS-664 [PaymentQ CF] [No QA] [FE] [Desktop Web] Checkout Payment : Countdown Timer
+- MRS-663 [PaymentQ CF] [No QA] [FE] [Mobile Web] Checkout Payment : Countdown Timer
+- MRS-649 [PaymentQ CF] [No QA] [FE] [Desktop Web] Checkout Payment Page
+- MRS-653 [PaymentQ CF] [No QA] [FE] [Mobile Web] Checkout Payment Page
+- MRS-795 [PaymentQ] [FE] [Payment List] Calculate admin fee
+- MRS-796 [PaymentQ] [FE] [Payment List] [Web Desktop] Implement Calculate Admin fee
+- MRS-800 [PaymentQ] [FE] [Payment List] [Mobile] Implement Calculate Admin fee
+- MRS-786 [PaymentQ] [FE] [VA] Checkout Payment Purchase : bank BCA
+- MRS-787 [PaymentQ] [FE] [VA] Checkout Payment Purchase : bank Mandiri
+- MRS-788 [PaymentQ] [FE] [VA] Checkout Payment Purchase : bank BNI
+- MRS-789 [PaymentQ] [FE] [VA] Checkout Payment Purchase : bank Permata
+- MRS-791 [PaymentQ] [FE] [e-Wallet] CF Purchase : gopay
+- MRS-793 [PaymentQ] [FE] [e-Wallet] CF Purchase : shopee pay
+- MRS-1006 [PaymentQ] [FE] [Checkout Payment] Implement Event Type on-load-checkout-payment
+- MRS-995 [PaymentQ] [FE] [Checkout Payment] create library for send post message to mobile device
+- MRS-996 [PaymentQ] [FE] [Checkout Payment] event type on-load-checkout-payment : waiting for payment
+- MRS-997 [PaymentQ] [FE] [Checkout Payment] event type on-load-checkout-payment : invalid url and expired
+- MRS-998 [PaymentQ] [FE] [Checkout Payment] event type on-load-checkout-payment : success
+- MRS-1001 [PaymentQ] [FE] [Desktop] Waiting for Payment : OVO
+- MRS-1002 [PaymentQ] [FE] [Mobile] Waiting for Payment : OVO
+- MRS-1151 [PaymentQ] [FE] [Mobile Desktop] Show timeout timer in form charge
+- MRS-1000 [PaymentQ] [FE] [Mobile] Form Charge : OVO
+- MRS-999 [PaymentQ] [FE] [Desktop] Form Charge : OVO
+- MRS-777 [PaymentQ] [FE] [TI] enhance session sehatq to be basic authentication only
+- MRS-778 [PaymentQ] [FE] [TI] Show timeout timer in form charge
+- MRS-1334 [PaymentQ] [FE] Form Charge - calculate order when split bill
+- MRS-1146 [PaymentQ] [FE] [WEB] waiting for payment impact split bill
+- MRS-1335 [PaymentQ] [FE] Form Charge CC - implement purchase split bill
+- MRS-1467 [PaymentQ] [FE] Form Charge OVO - implement purchase split bill
+- MRS-1399 [PaymentQ] [FE] Form Charge - handle verify token on load
+- MRS-1459 [PaymentQ] [FE] Form Charge - implement design payment summary section
+- MRS-2328 [PaymentQ] [FE] Enhance order summary detail in checkout payment and form charge
+- MRS-2612 [PaymentQ] [3ds] [TI] Add delay before redirect to order detail in mobile

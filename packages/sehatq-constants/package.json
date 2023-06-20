@@ -1,0 +1,43 @@
+{
+  "name": "@sehatq/constants",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup-node src/index.ts --format esm,cjs --dts --env.HOST PRODUCTION",
+    "build:rc": "tsup-node src/index.ts --format esm,cjs --dts  --env.HOST RC",
+    "build:sanity": "tsup-node src/index.ts --format esm,cjs --dts  --env.HOST SANITY",
+    "build:dev": "tsup-node src/index.ts --format esm,cjs --dts  --env.HOST DEV",
+    "build:sb": "tsup-node src/index.ts --format esm,cjs --dts  --env.HOST PRODUCTION",
+    "build:sb-sanity": "tsup-node src/index.ts --format esm,cjs --dts  --env.HOST SANITY",
+    "build:sb-dev": "tsup-node src/index.ts --format esm,cjs --dts  --env.HOST DEV",
+    "dev": "tsup-node src/index.ts --format esm,cjs --watch --dts  --env.HOST PRODUCTION",
+    "dev:rc": "tsup-node src/index.ts --format esm,cjs --watch --dts  --env.HOST RC",
+    "dev:sanity": "tsup-node src/index.ts --format esm,cjs --watch --dts  --env.HOST SANITY",
+    "dev:dev": "tsup-node src/index.ts --format esm,cjs --watch --dts  --env.HOST DEV",
+    "dev:sb": "tsup-node src/index.ts --format esm,cjs --watch --dts  --env.HOST PRODUCTION",
+    "dev:sb-sanity": "tsup-node src/index.ts --format esm,cjs --watch --dts  --env.HOST SANITY",
+    "dev:sb-dev": "tsup-node src/index.ts --format esm,cjs --watch --dts  --env.HOST DEV",
+    "lint": "TIMING=1 eslint src --fix",
+    "lint:staged": "lint-staged",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "lint-staged": {
+    "src/**/*.@(ts|tsx)": "eslint --fix"
+  },
+  "devDependencies": {
+    "@sehatq/tsconfig": "*",
+    "eslint-preset-sehatq": "*",
+    "tsup": "^5.10.1",
+    "typescript": "4.6.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

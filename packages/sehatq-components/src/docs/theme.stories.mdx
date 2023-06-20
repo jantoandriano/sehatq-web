@@ -1,0 +1,466 @@
+import { Meta } from "@storybook/addon-docs";
+import { Palette } from "./components";
+import { Box, SimpleGrid, Text, Flex } from "../user-interfaces";
+
+<Meta title="UI Docs / Theme" description="The default theme tokens." />
+
+# Theme
+
+> This page of documentation was inspired by [chakra-ui's default theme](https://chakra-ui.com/docs/theming/theme)
+
+> **Relative unit mental model:** `em` is relative to the font-size of its direct or nearest parent, `rem` is only relative to the html (root) font-size. [Read more](https://j.eremy.net/confused-about-rem-and-em/).
+
+The theme object is where you define your application's color palette, type
+scale, font stacks, breakpoints, border radius values, and more.
+
+Theming is based on the
+[Styled System Theme Specification](https://system-ui.com/theme/)
+
+## Colors
+
+### Main Color
+
+<Palette name="main" />
+
+### Sea
+
+<Palette name="sea" />
+
+### Pale Blue
+
+<Palette name="paleBlue" />
+
+### Ice Blue
+
+<Palette name="iceBlue" />
+
+### Cherry
+
+<Palette name="cherry" />
+
+### Squash
+
+<Palette name="squash" />
+
+### Sunflower Yellow
+
+<Palette name="sunflowerYellow" />
+
+### Shamrock
+
+<Palette name="shamrock" />
+
+### Azure
+
+<Palette name="azure" />
+
+### Gray
+
+<Palette name="gray" />
+
+### BrownGrey
+
+<Palette name="brownGrey" />
+
+### Others
+
+<SimpleGrid columns={3} spacing={3}>
+  <Flex align="center">
+    <Box
+      width="50px"
+      height="50px"
+      borderRadius={4}
+      background="charcoalGrey"
+      boxShadow="inner"
+      marginRight={3}
+    />
+    <Box>
+      <Text fontSize="xs" fontFamily="heading" fontWeight="semibold">
+        charcoalGrey
+      </Text>
+      <Text fontSize="xs">#36454F</Text>
+    </Box>
+  </Flex>
+  <Flex align="center">
+    <Box
+      width="50px"
+      height="50px"
+      borderRadius={4}
+      background="brownGrey.500"
+      boxShadow="inner"
+      marginRight={3}
+    />
+    <Box>
+      <Text fontSize="xs" fontFamily="heading" fontWeight="semibold">
+        brownGrey.500
+      </Text>
+      <Text fontSize="xs">#A7A7A7</Text>
+    </Box>
+  </Flex>
+  <Flex align="center">
+    <Box
+      width="50px"
+      height="50px"
+      borderRadius={4}
+      background="veryLightPink"
+      boxShadow="inner"
+      marginRight={3}
+    />
+    <Box>
+      <Text fontSize="xs" fontFamily="heading" fontWeight="semibold">
+        veryLightPink
+      </Text>
+      <Text fontSize="xs">#DADADA</Text>
+    </Box>
+  </Flex>
+  <Flex align="center">
+    <Box
+      width="50px"
+      height="50px"
+      borderRadius={4}
+      background="butterscotch"
+      boxShadow="inner"
+      marginRight={3}
+    />
+    <Box>
+      <Text fontSize="xs" fontFamily="heading" fontWeight="semibold">
+        butterscotch
+      </Text>
+      <Text fontSize="xs">#F5B14A</Text>
+    </Box>
+  </Flex>
+  <Flex align="center">
+    <Box
+      width="50px"
+      height="50px"
+      borderRadius={4}
+      background="tiffanyBlue"
+      boxShadow="inner"
+      marginRight={3}
+    />
+    <Box>
+      <Text fontSize="xs" fontFamily="heading" fontWeight="semibold">
+        tiffanyBlue
+      </Text>
+      <Text fontSize="xs">#88D0D4</Text>
+    </Box>
+  </Flex>
+  <Flex align="center">
+    <Box
+      width="50px"
+      height="50px"
+      borderRadius={4}
+      background="sea650"
+      boxShadow="inner"
+      marginRight={3}
+    />
+    <Box>
+      <Text fontSize="xs" fontFamily="heading" fontWeight="semibold">
+        sea650
+      </Text>
+      <Text fontSize="xs">#1c7171</Text>
+    </Box>
+  </Flex>
+</SimpleGrid>
+
+## Typography
+
+To manage Typography options, the theme object supports the following keys:
+
+- `fonts` (font families)
+- `fontSizes`
+- `fontWeights`
+- `lineHeights`
+- `letterSpacings`
+
+```js
+// example theme object
+export default {
+  colors: {...},
+  fonts: {
+    body: "Open Sans",
+    heading: "Poppins",
+  },
+  fontSizes: {
+    xxs: "0.625rem", // 10px
+    xs: "0.75rem", // 12px
+    sm: "0.875rem", // 14px
+    md: "1rem", // 16px
+    lg: "1.125rem", // 18px
+    xl: "1.25rem", // 20px
+    "2xl": "1.375rem", // 22px
+    "3xl": "1.5rem", // 24px
+    "4xl": "1.625rem", // 26px
+    "5xl": "1.75rem", // 28px
+    "6xl": "1.875rem", // 30px
+    "7xl": "2rem", // 32px
+    "8xl": "2.125rem", // 34px
+    "9xl": "2.25rem", // 36px
+  },
+  fontWeights: {
+    hairline: 100,
+    thin: 200,
+    light: 300,
+    normal: 400,
+    medium: 500,
+    semibold: 600,
+    bold: 700,
+    extrabold: 800,
+    black: 900,
+  },
+  lineHeights: {
+    normal: "normal",
+    none: 1,
+    shorter: 1.25,
+    short: 1.375,
+    base: 1.5,
+    tall: 1.625,
+    taller: 2,
+    "3": "1rem", // 16px
+    "4": "1.125rem", // 18px
+    "5": "1.25rem", // 20px
+    "6": "1.375rem", // 22px
+    "7": "1.5rem", // 24px
+    "8": "1.625rem", // 26px
+    "9": "1.75rem", // 28px
+    "10": "1.875rem", // 30px
+    "11": "2rem", // 32px
+    "12": "2.125rem", // 34px
+    "13": "2.25rem", // 36px
+    "14": "2.375rem", // 38px
+    "15": "2.5rem", // 40px
+    "16": "2.625rem", // 42px
+    "17": "2.75rem", // 44px
+    "18": "2.825rem", // 46px
+  },
+  letterSpacings: {
+    // Assume parent font-size is equal to 10px
+    tighter: "-0.05em", // -0.5px
+    tight: "-0.025em", // -0.25px
+    normal: "0", // 0px
+    wide: "0.025em", // 0.25px
+    wider: "0.05em", // 0.5px
+    widest: "0.1em", // 1px
+  },
+};
+```
+
+## Breakpoints
+
+It comes with a predefined set of commonly used breakpoints.
+
+> Learn more about
+> [Responsive Styles and Customizing Breakpoints](/?path=/story/ui-docs-responsive-styles--page).
+
+```js
+// theme.js
+export default createBreakpoints({
+  // Assume parent font-size is equal to 16px
+  sm: "30em", // 480px
+  md: "48em", // 768px
+  lg: "62em", // 992px
+  xl: "80em", // 992px
+  "2xl": "96em", // 1280px
+});
+```
+
+## Spacing
+
+The `space` key allows you to customize the global spacing and sizing scale for
+your project. By default these spacing value can be referenced by the `padding`,
+`margin`, and `top`, `left`, `right`, `bottom` styles.
+
+```js
+export default {
+  space: {
+    px: "1px",
+    0.5: "0.125rem",
+    1: "0.25rem",
+    1.5: "0.375rem",
+    2: "0.5rem",
+    2.5: "0.625rem",
+    3: "0.75rem",
+    3.5: "0.875rem",
+    4: "1rem",
+    5: "1.25rem",
+    6: "1.5rem",
+    7: "1.75rem",
+    8: "2rem",
+    9: "2.25rem",
+    10: "2.5rem",
+    12: "3rem",
+    14: "3.5rem",
+    16: "4rem",
+    20: "5rem",
+    24: "6rem",
+    28: "7rem",
+    32: "8rem",
+    36: "9rem",
+    40: "10rem",
+    44: "11rem",
+    48: "12rem",
+    52: "13rem",
+    56: "14rem",
+    60: "15rem",
+    64: "16rem",
+    72: "18rem",
+    80: "20rem",
+    96: "24rem",
+  },
+};
+```
+
+By default, It includes a comprehensive numeric spacing scale inspired by
+Tailwind CSS. The values are proportional, so 1 spacing unit is equal to
+`0.25rem`, which translates to `4px` by default in common browsers.
+
+> **Mental model:** If you need a spacing of `40px`, divide it by `4`. That'll
+> give you `10`. Then use it in your component.
+
+| Name | Space    | Pixels |                                    |
+| ---- | -------- | ------ | ---------------------------------- |
+| px   | 1px      | 1px    | <Box bg="pink.200" h="4" w="px"/>  |
+| 0.5  | 0.125rem | 2px    | <Box bg="pink.200" h="4" w="0.5"/> |
+| 1    | 0.25rem  | 4px    | <Box bg="pink.200" h="4" w="1"/>   |
+| 1.5  | 0.375rem | 6px    | <Box bg="pink.200" h="4" w="1.5"/> |
+| 2    | 0.5rem   | 8px    | <Box bg="pink.200" h="4" w="2"/>   |
+| 2.5  | 0.625rem | 10px   | <Box bg="pink.200" h="4" w="2.5"/> |
+| 3    | 0.75rem  | 12px   | <Box bg="pink.200" h="4" w="3"/>   |
+| 3.5  | 0.875rem | 14px   | <Box bg="pink.200" h="4" w="3.5"/> |
+| 4    | 1rem     | 16px   | <Box bg="pink.200" h="4" w="4"/>   |
+| 5    | 1.25rem  | 20px   | <Box bg="pink.200" h="4" w="5"/>   |
+| 6    | 1.5rem   | 24px   | <Box bg="pink.200" h="4" w="6"/>   |
+| 7    | 1.75rem  | 28px   | <Box bg="pink.200" h="4" w="7"/>   |
+| 8    | 2rem     | 32px   | <Box bg="pink.200" h="4" w="8"/>   |
+| 9    | 2.25rem  | 36px   | <Box bg="pink.200" h="4" w="9"/>   |
+| 10   | 2.5rem   | 40px   | <Box bg="pink.200" h="4" w="10"/>  |
+| 12   | 3rem     | 48px   | <Box bg="pink.200" h="4" w="12"/>  |
+| 14   | 3.5rem   | 56px   | <Box bg="pink.200" h="4" w="14"/>  |
+| 16   | 4rem     | 64px   | <Box bg="pink.200" h="4" w="16"/>  |
+| 20   | 5rem     | 80px   | <Box bg="pink.200" h="4" w="20"/>  |
+| 24   | 6rem     | 96px   | <Box bg="pink.200" h="4" w="24"/>  |
+| 28   | 7rem     | 112px  | <Box bg="pink.200" h="4" w="28"/>  |
+| 32   | 8rem     | 128px  | <Box bg="pink.200" h="4" w="32"/>  |
+| 36   | 9rem     | 144px  | <Box bg="pink.200" h="4" w="36"/>  |
+| 40   | 10rem    | 160px  | <Box bg="pink.200" h="4" w="40"/>  |
+| 44   | 11rem    | 176px  | <Box bg="pink.200" h="4" w="44"/>  |
+| 48   | 12rem    | 192px  | <Box bg="pink.200" h="4" w="48"/>  |
+| 56   | 14rem    | 224px  | <Box bg="pink.200" h="4" w="56"/>  |
+| 60   | 15rem    | 240px  | <Box bg="pink.200" h="4" w="60"/>  |
+| 64   | 16rem    | 256px  | <Box bg="pink.200" h="4" w="64"/>  |
+| 72   | 18rem    | 288px  | <Box bg="pink.200" h="4" w="72"/>  |
+| 80   | 20rem    | 320px  | <Box bg="pink.200" h="4" w="80"/>  |
+| 96   | 24rem    | 384px  | <Box bg="pink.200" h="4" w="96"/>  |
+
+## Sizes
+
+The `sizes` key allows you to customize the global sizing of components you
+build for your project. By default these sizes value can be referenced by the
+`width`, `height`, and `maxWidth`, `minWidth`, `maxHeight`, `minHeight` styles.
+
+```js
+export default {
+  sizes: {
+    ...theme.space,
+    max: "max-content",
+    min: "min-content",
+    full: "100%",
+    "3xs": "14rem", // 224px
+    "2xs": "16rem", // 256px
+    xs: "20rem", // 320px
+    sm: "24rem", // 384px
+    md: "28rem", // 348px
+    lg: "32rem", // 412px
+    xl: "36rem", // 476px
+    "2xl": "42rem", // 672px
+    "3xl": "48rem", // 604px
+    "4xl": "56rem", // 768px
+    "5xl": "64rem", // 1024px
+    "6xl": "72rem", // 1152px
+    "7xl": "80rem", // 1280px
+    "8xl": "90rem", // 1440px
+    container: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
+  },
+};
+```
+
+A component like this: `<Box w={4} h={3} />` will generate an empty `div` with
+width set to `1rem` or `16px` and height set to `0.75rem` or `12px`.
+
+## Border radius
+
+It provides a set of smooth corner radius values.
+
+```js
+export default {
+  radii: {
+    none: "0",
+    sm: "0.125rem", // 2px
+    base: "0.25rem", // 4px
+    md: "0.375rem", // 6px
+    lg: "0.5rem", // 8px
+    xl: "0.625rem", // 10px
+    "2xl": "0.75rem", // 12px
+    "3xl": "1rem", // 16px
+    "4xl": "1.5rem", // 24px
+    full: "9999px",
+  },
+};
+```
+
+## Box shadow
+
+It provides a set of box shadows.
+
+```js
+export default {
+  shadows: {
+    xs: "0 1px 4px 0 #dadada",
+    sm: "0 2px 12px 0 rgba(218, 218, 218, 0.5)",
+    base: "0 2px 12px 0 rgba(0, 0, 0, 0.1)",
+    md: "0 2px 18px 0 rgba(0, 0, 0, 0.1)",
+    lg: "0 1px 8px 0 #e0e0e0",
+    xl: "0 2px 8px 0 #dadada",
+    "2xl": "0 2px 12px 0 rgba(0, 0, 0, 0.3)",
+    outline: "0 0 0 3px rgba(66, 153, 225, 0.6)",
+    inner: "inset 0 2px 4px 0 rgba(0,0,0,0.06)",
+    none: "none",
+    "blue-base": "0 2px 12px 0 rgba(34, 133, 137, 0.15)",
+    "blue-md": "0 2px 18px 0 rgba(34, 133, 137, 0.15)",
+  },
+};
+```
+
+## z-index values
+
+We recommend trying to solve stacking issues without `z-index`. You can read our
+recommendations and learn more about
+[stacking contexts](/?path=/story/ui-docs-stacking-contexts--page).
+
+Iy provides a minimal set of z-Indices out of the box to help control the
+stacking order of components.
+
+```js
+export default {
+  zIndices: {
+    hide: -1,
+    auto: "auto",
+    base: 0,
+    docked: 10,
+    dropdown: 1000,
+    sticky: 1100,
+    banner: 1200,
+    overlay: 1300,
+    modal: 1400,
+    popover: 1500,
+    skipLink: 1600,
+    toast: 1700,
+    tooltip: 1800,
+  },
+};
+```

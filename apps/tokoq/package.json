@@ -1,0 +1,34 @@
+{
+  "name": "tokoq",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "build:sanity": "next build",
+    "build:dev": "next build",
+    "start": "next start -p ${PORT:=3003}",
+    "dev": "next dev -p 3003",
+    "dev:sanity": "next dev -p 3003",
+    "dev:dev": "next dev -p 3003",
+    "lint": "TIMING=1 next lint",
+    "lint:staged": "lint-staged",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next"
+  },
+  "dependencies": {
+    "@sehatq/components": "*",
+    "@sehatq/constants": "*",
+    "@sehatq/utils": "*",
+    "next": "^12.3.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-query": "^3.39.1"
+  },
+  "devDependencies": {
+    "@sehatq/tsconfig": "*",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "eslint-preset-sehatq": "*",
+    "lint-staged": "^12.1.7",
+    "typescript": "^4.5.4"
+  }
+}

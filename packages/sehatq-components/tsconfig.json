@@ -1,0 +1,10 @@
+{
+  "extends": "@sehatq/tsconfig/react-library.json",
+  "include": [".", "../../apps/paymentq/src/components/features/waiting-payment/credit-card.tsx"],
+  "exclude": ["dist", "build", "node_modules"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}

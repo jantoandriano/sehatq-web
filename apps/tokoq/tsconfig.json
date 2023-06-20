@@ -1,0 +1,18 @@
+{
+  "exclude": ["node_modules"],
+  "extends": "@sehatq/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "dist",
+    "incremental": true,
+    "paths": {
+      "@components": ["src/components/"],
+      "@components/*": ["src/components/*"],
+      "@get-props": ["src/get-props/"],
+      "@utils": ["src/utils/"],
+      "@constants": ["src/constants/"],
+    }
+  },
+  "include": ["src", "next-env.d.ts"]
+}

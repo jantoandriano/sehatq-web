@@ -1,0 +1,15 @@
+.DS_Store
+node_modules
+.turbo
+*.log
+.next
+sb-dist
+dist
+dist-ssr
+*.local
+.cache
+server/dist
+public/dist
+.turbo
+out
+.env

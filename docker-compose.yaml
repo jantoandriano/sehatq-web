@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  web:
+    image: node:14.17.0-alpine
+    working_dir: /app
+    volumes:
+      - ./:/app
+    tty: true
+
+  sehatq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - SCOPE=sehatq
+        - BUILD_CMD=build:sehatq-dev
+    tty: true
+    ports:
+      - 3000:3000
+
+  tokoq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - SCOPE=tokoq
+        - BUILD_CMD=build:tokoq
+    tty: true
+    ports:
+      - 3003:3003

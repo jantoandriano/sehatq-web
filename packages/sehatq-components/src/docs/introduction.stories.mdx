@@ -1,0 +1,105 @@
+import { Meta } from "@storybook/addon-docs";
+
+<Meta
+  title="How to Code / Introduction"
+  description="Learn how to start create user interfaces, features and apps"
+/>
+
+# Introduction
+
+Sehatq web monorepo design using turborepo features. There ares some packages and apps:
+
+- `sehatq`: SehatQ web application powered by [Next.js](https://nextjs.org)
+- `tokoq`: TokoQ web application powered by [Next.js](https://nextjs.org)
+- `@sehatq/components`: docs, user interfaces and domain-spesific features powered by [Storybook](https://storybook.js.org/) and [tsup](https://tsup.egoist.sh/)
+- `@sehatq/constants`: shared Constants
+- `@sehatq/types`: shared non generic type
+- `@sehatq/utils`: shared React, generic type and function utilities
+- `@sehatq/tsconfig`: shared `tsconfig.json`s used throughout the monorepo
+- `eslint-preset-sehatq`: ESLint preset
+
+The packages and apps source code in project strcuture seperti
+
+```
+  root
+  ├── apps
+  |   ├── sehatq
+  |   |   ├── src
+  |   |   |   ├── components                      # SehatQ-specific React component
+  |   |   |   |   ├── directory-name              # Directory name in kebab-case
+  |   |   |   |   |   ├── directory-name
+  |   |   |   |   |   |   ├── component-name.tsx  # File name in kebab-case
+  |   |   |   |   |   |   └── index.tsx
+  |   |   |   |   |   |
+  |   |   |   |   |   ├── component-name.tsx
+  |   |   |   |   |   └── index.tsx               # Reexport React component from file-name.tsx
+  |   |   |   |   |
+  |   |   |   |   ├── component-name.tsx
+  |   |   |   |   └── index.tsx
+  |   |   |   |
+  |   |   |   ├── constants                       # SehatQ-specific constants
+  |   |   |   |
+  |   |   |   ├── get-props                       # Async function for get initial page props.
+  |   |   |   |
+  |   |   |   ├── pages                           # Next.js pages
+  |   |   |   |   ├── _middleware.ts              # General Next.js middleware
+  |   |   |   |   |
+  |   |   |   |   ├── path
+  |   |   |   |   |   ├── _middleware.ts          # Next.js middleware for rewrite page
+  |   |   |   |   |   ├── index.tsx               # Static desktop page
+  |   |   |   |   |   ├── mobile.tsx              # Static mobile page
+  |   |   |   |   |   └── ssr.tsx                 # Dynamic page (desktop and mobile view)
+  |   |   |   |   |
+  |   |   |   |   └── other-path.tsx              # Dynamic page (desktop and mobile view)
+  |   |   |   |
+  |   |   |   ├── types                           # SehatQ-specific non generic types
+  |   |   |   |
+  |   |   |   └── utils                           # SehatQ-specific React, generic type and function utilities
+  |   |   |
+  |   |   └── public                              # Static files (images, fonts, audios, etc.)
+  |   |       ├── images
+  |   |       |
+  |   |       └── robots.txt
+  |   |
+  |   └── tokoq                                   # Directory structure is equal with sehatq
+  |
+  ├── packages
+  |   ├── sehatq-component (@sehatq/components)
+  |   |   ├── .storybook                          # Storybook config
+  |   |   |
+  |   |   ├── src
+  |   |   |   ├── docs                            # Pure documentation pages
+  |   |   |   |   ├── component
+  |   |   |   |   |   ├── component-name.tsx      # Docs-specific react components
+  |   |   |   |   |   |
+  |   |   |   |   |   └── index.tsx               # Reexport React component from file-name.tsx
+  |   |   |   |   |
+  |   |   |   |   └── doc-name.docs.mdx           # Documentation page
+  |   |   |   |
+  |   |   |   ├── features                        # Domain-specific features
+  |   |   |   |   ├── feature-name
+  |   |   |   |   |   ├── stories                 # Docs-specific react components
+  |   |   |   |   |   |   └── c-n.stories.tsx     # Docs-specific react components
+  |   |   |   |   |   |
+  |   |   |   |   |   ├── component-name.tsx      # Docs-specific react components
+  |   |   |   |   |   |
+  |   |   |   |   |   ├── f-n-atoms.tsx           # Docs-specific react components
+  |   |   |   |   |   |
+  |   |   |   |   |   ├── f-n-constants.tsx       # Docs-specific react components
+  |   |   |   |   |   |
+  |   |   |   |   |   ├── f-n-model.tsx           # Docs-specific react components
+  |   |   |   |   |   |
+  |   |   |   |   |   ├── f-n-queries.tsx         # Docs-specific react components
+  |   |   |   |   |   |
+  |   |   |   |   |   └── index.tsx               # Reexport React component from file-name.tsx
+  |   |   |   |   |
+  |   |   |   |   └── index.tsx                   # Reexport React component from file-name.tsx
+  |   |   |   |
+  |   |   |   ├── types                           # SehatQ web page
+  |   |   |   |
+  |   |   |   └── user-interfaces                 # Sehatq-specific React, generic type and function utilities
+  |   |   |
+  |   |   └── index.tsx                           # Reexport React component from file-name.tsx
+  │
+
+```

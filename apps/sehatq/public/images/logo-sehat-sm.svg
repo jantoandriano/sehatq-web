@@ -1,0 +1,21 @@
+<svg width="35" height="34" viewBox="0 0 35 34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path id="o2ld7s5u2a" d="M0 0h30v30H0z"/>
+        <path id="bociom79rc" d="M0 30h30V0H0z"/>
+    </defs>
+    <g transform="translate(3 2)" fill="none" fill-rule="evenodd">
+        <mask id="s0xgttv0qb" fill="#fff">
+            <use xlink:href="#o2ld7s5u2a"/>
+        </mask>
+        <path d="M15 0C6.716 0 0 6.716 0 15c0 8.284 6.716 15 15 15 8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15" fill="#44C0C2" mask="url(#s0xgttv0qb)"/>
+        <path d="m24.308 20.685-1.173-1.173a9.303 9.303 0 1 0-3.513 3.56l1.15 1.15a2.5 2.5 0 1 0 3.536-3.537" fill="#FFF"/>
+        <path d="M17.223 10.644a2.186 2.186 0 1 0-4.372 0v2.186h4.372v-2.186z" fill="#FED002"/>
+        <path d="M19.408 17.2a2.186 2.186 0 1 0 0-4.37h-2.185v4.37h2.185z" fill="#F39F1E"/>
+        <path d="M10.666 12.83a2.186 2.186 0 1 0 0 4.371h2.185V12.83h-2.185z" fill="#FED002"/>
+        <path d="M12.851 19.386a2.186 2.186 0 1 0 4.372 0v-2.185H12.85v2.185z" fill="#F39F1E"/>
+        <mask id="fotntdfevd" fill="#fff">
+            <use xlink:href="#bociom79rc"/>
+        </mask>
+        <path fill="#EA8223" mask="url(#fotntdfevd)" d="M12.851 17.2h4.372v-4.37H12.85z"/>
+    </g>
+</svg>

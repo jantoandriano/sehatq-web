@@ -1,0 +1,15 @@
+export const shadows = {
+  xs: "0 1px 4px 0 #dadada",
+  sm: "0 2px 12px 0 rgba(218, 218, 218, 0.5)",
+  base: "0 2px 12px 0 rgba(0, 0, 0, 0.1)",
+  md: "0 2px 18px 0 rgba(0, 0, 0, 0.1)",
+  lg: "0 1px 8px 0 #e0e0e0",
+  xl: "0 2px 8px 0 #dadada",
+  "2xl": "0 2px 12px 0 rgba(0, 0, 0, 0.3)",
+  outline: "0 0 0 3px rgba(66, 153, 225, 0.6)",
+  inner: "inset 0 2px 4px 0 rgba(0,0,0,0.06)",
+  none: "none",
+  "blue-base": "0 2px 12px 0 rgba(34, 133, 137, 0.15)",
+  "blue-md": "0 2px 18px 0 rgba(34, 133, 137, 0.15)",
+  "sea-base": "0 2px 12px 0 rgba(43, 142, 142, 0.15)",
+};

@@ -1,0 +1,107 @@
+{
+  "pipeline": {
+    "build:sb": {
+      "outputs": [
+        "sb-dist/**"
+      ],
+      "dependsOn": [
+        "^build:sb"
+      ]
+    },
+    "build:sb-sanity": {
+      "outputs": [
+        "sb-dist/**"
+      ],
+      "dependsOn": [
+        "^build:sb-sanity"
+      ]
+    },
+    "build:sb-dev": {
+      "outputs": [
+        "sb-dist/**"
+      ],
+      "dependsOn": [
+        "^build:sb-dev"
+      ]
+    },
+    "build": {
+      "outputs": [
+        "dist/**",
+        ".next/**"
+      ],
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "build:rc": {
+      "outputs": [
+        "dist/**",
+        ".next/**"
+      ],
+      "dependsOn": [
+        "^build:rc"
+      ]
+    },
+    "build:sanity": {
+      "outputs": [
+        "dist/**",
+        ".next/**"
+      ],
+      "dependsOn": [
+        "^build:sanity"
+      ]
+    },
+    "build:dev": {
+      "outputs": [
+        "dist/**",
+        ".next/**"
+      ],
+      "dependsOn": [
+        "^build:dev"
+      ]
+    },
+    "test": {
+      "outputs": [
+        "coverage/**"
+      ],
+      "dependsOn": []
+    },
+    "test:get-lcov": {
+      "outputs": [
+        "coverage/**"
+      ],
+      "dependsOn": []
+    },
+    "lint": {
+      "outputs": []
+    },
+    "lint:staged": {
+      "cache": false
+    },
+    "dev:sb": {
+      "cache": false
+    },
+    "dev:sb-sanity": {
+      "cache": false
+    },
+    "dev:sb-dev": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false
+    },
+    "dev:rc": {
+      "cache": false
+    },
+    "dev:sanity": {
+      "cache": false
+    },
+    "dev:dev": {
+      "cache": false
+    },
+    "clean": {
+      "cache": false
+    }
+  }
+}
+ 
